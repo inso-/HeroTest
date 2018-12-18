@@ -1,0 +1,44 @@
+1. I spend between 1h30 and 2h30 hours on the test, I had no more available time to do it.
+
+2. A list of all the thing I will have made to improve the quality of this test if I had more time to work on it.
+This list is non exhaustive, there is so much thing that we can improve if we had an unlimited number of time
+
+On app:
+
+Functional:
+- I will have make a more styled page for the user interface by having a more beautiful sort functionality with a drop down menu.
+- Display more information for each item (for example: brand, picture)
+- Display the total number of items displayed
+- Add a loader on collectionViewFooter when the app is « loading more »
+- Add an Error displaying when the network is bad
+- Add a title on Navigation Bar
+- Add a details view for product displaying more information by calling the details API 
+
+- Add a splashScreen
+- Add an AppIcon
+
+Technical:
+
+Model:
+- I will have made the filter function more independent from Domain by making a model Item independent from the one in domain and by making a converter between this model and the one in Domain subtarget
+- I will have made a ItemCellModel independent from Domain by having only the needed information inside and not the Item object model from Domain
+
+Dependency Injection improvement:
+- I will have made ItemsListViewController more independent by taking an object conforming to itemsUseCase
+
+Unit Test:
+- I will have make unit test not only for presenter and interaction but also for ItemsListViewController and and ItemsListWorker
+- I will have make a unit test for the filter function
+
+UITest:
+- I will have add cucumber UI test 
+
+On subtarget:
+Technical:
+
+Mock:
+- I will have make another object conforming to itemsUseCase to provide mock Data
+Cache:
+- I will have add a cache system on my APIClient
+UnitTest:
+- I will have make unit test for domain and platform
